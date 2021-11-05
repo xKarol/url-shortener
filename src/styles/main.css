@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  padding: 35px 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__left-side, .header__right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__links a {
+  color: #9e9aa7;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header__logo {
+  margin-right: 40px;
+}
+
+.header__button {
+  color: white;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 20px;
+  background: #2acfcf;
+  cursor: pointer;
+}
+
+.header__button:not(:last-child) {
+  margin-right: 5px;
+}
+
+.header__button.sign-in {
+  color: #9e9aa7;
+  background: none;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,45 @@
+.header {
+  padding: 35px $page-padding;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__left-side,
+  &__right-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__links a {
+    color: $grayish-violet;
+    font-weight: $font-lg;
+    font-size: 16px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  &__logo {
+    margin-right: 40px;
+  }
+
+  &__button {
+    color: $white;
+    font-weight: $font-lg;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 20px;
+    background: $cyan;
+    cursor: pointer;
+    &:not(:last-child){
+        margin-right: 5px;
+    }
+    &.sign-in {
+      color: $grayish-violet;
+      background: none;
+    }
+  }
+}
