@@ -5,6 +5,35 @@
   flex-direction: row;
   justify-content: space-between;
 
+  &__hamburger {
+    width: 20px;
+    display: none;
+    cursor: pointer;
+    > span {
+      width: 100%;
+      height: 2px;
+      background-color: $grayish-violet;
+      transform-origin: 0% 45%;
+      transition: 0.5s ease-in-out;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+    &.--active {
+      > span:nth-child(1) {
+        transform: rotateZ(45deg);
+      }
+      > span:nth-child(2) {
+        transform: translateY(-5px);
+        opacity: 0;
+      }
+      > span:nth-child(3) {
+        transform: rotateZ(-45deg);
+      }
+    }
+  }
+
   &__left-side,
   &__right-side {
     display: flex;
@@ -16,7 +45,6 @@
     color: $grayish-violet;
     font-weight: $font-lg;
     font-size: 16px;
-
     &:not(:last-child) {
       margin-right: 20px;
     }
@@ -34,12 +62,24 @@
     padding: 8px 20px;
     background: $cyan;
     cursor: pointer;
-    &:not(:last-child){
-        margin-right: 5px;
+    &:not(:last-child) {
+      margin-right: 5px;
     }
     &.sign-in {
       color: $grayish-violet;
       background: none;
+    }
+  }
+  @include breakpoint-down(medium) {
+    &__links a,
+    &__button {
+      display: none;
+    }
+    &__hamburger {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
   }
 }
