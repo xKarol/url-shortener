@@ -16,7 +16,7 @@ const Header = () => {
         <div className="header__right-side">
           <button className="header__button sign-in">Login</button>
           <button className="header__button">Sign Up</button>
-          <div className="header__hamburger --active">
+          <div className="header__hamburger">
             <span />
             <span />
             <span />
