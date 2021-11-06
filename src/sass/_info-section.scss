@@ -14,7 +14,7 @@
     font-size: 30px;
     color: $very-dark-violet;
     text-align: center;
-    margin-bottom: 15px;
+    margin: 15px 0;
   }
   &__text {
     font-weight: $font-lg;
@@ -26,7 +26,10 @@
   &__grid {
     display: grid;
     grid-template-rows: repeat(17, 60px);
+
     position: relative;
+    gap: 25px;
+    padding-bottom: 25px;
     &::before {
       content: "";
       position: absolute;
@@ -39,7 +42,7 @@
     }
     @include breakpoint-up(large) {
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(7, 60px);
+      grid-template-rows: repeat(7, 40px);
       &::before {
         height: 8px;
         width: 80%;
@@ -48,9 +51,8 @@
   }
   &__box {
     background-color: $white;
-    margin: 15px;
     border-radius: 5px;
-    padding: 80px 30px 0 30px;
+    padding: 60px 30px 0 30px;
     position: relative;
     &__icon {
       position: absolute;
@@ -86,13 +88,13 @@
       line-height: 1.5;
     }
     &:nth-child(1) {
-      grid-row: 1 / span 5;
+      grid-row: 1 / span 4;
     }
     &:nth-child(2) {
-      grid-row: 7 / span 5;
+      grid-row: 7 / span 4;
     }
     &:nth-child(3) {
-      grid-row: 13 / span 5;
+      grid-row: 13 / span 4;
     }
     @include breakpoint-up(large) {
       &:nth-child(1) {
@@ -105,5 +107,11 @@
         grid-row: 3 / span 5;
       }
     }
+  }
+  @include breakpoint-down(medium) {
+    padding: 0 25px;
+  }
+  @include breakpoint-up(large) {
+    padding: 0 $page-padding;
   }
 }

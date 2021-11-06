@@ -1,5 +1,4 @@
 .shortener {
-  margin: 15px $page-padding;
   padding: 35px;
   background-color: $dark-violet;
   min-height: 50px;
@@ -19,7 +18,6 @@
     background: url("./images/bg-shorten-desktop.svg") no-repeat;
   }
   @include breakpoint-down(medium) {
-    margin: 15px;
     padding: 25px;
   }
   &__input,
