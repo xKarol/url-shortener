@@ -509,4 +509,77 @@ button {
     grid-row: 3 / span 5;
   }
 }
+
+.footer {
+  background-color: #35323e;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__logo {
+  margin: 40px 0;
+}
+
+.footer__links {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+}
+
+.footer__link {
+  color: #bfbfbf;
+}
+
+.footer__link:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer__link-title {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.footer__socials {
+  padding: 15px 0;
+}
+
+.footer__socials > a {
+  font-size: 26px;
+}
+
+.footer__socials > a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.footer > span {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.footer > span > a {
+  color: white;
+  font-weight: 700;
+}
 /*# sourceMappingURL=main.css.map */
