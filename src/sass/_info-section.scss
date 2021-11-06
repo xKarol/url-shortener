@@ -1,0 +1,107 @@
+.info-section {
+  background-color: hsl(228, 20%, 95%);
+  margin-top: 50px;
+  &__details {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-weight: $font-lg;
+    font-size: 30px;
+    color: $very-dark-violet;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-weight: $font-lg;
+    font-size: $font-size;
+    color: $gray;
+    text-align: center;
+    line-height: 1.5;
+  }
+  &__grid {
+    display: grid;
+    grid-template-rows: repeat(17, 60px);
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 8px;
+      height: 80%;
+      background-color: $cyan;
+    }
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(7, 60px);
+      &::before {
+        height: 8px;
+        width: 80%;
+      }
+    }
+  }
+  &__box {
+    background-color: $white;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 80px 30px 0 30px;
+    position: relative;
+    &__icon {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      left: 50%;
+      top: -40px;
+      transform: translateX(-50%);
+      background-color: $very-dark-violet;
+      border-radius: 50%;
+      > img {
+        position: absolute;
+        left: 50%;
+        top: 18px;
+        transform: translateX(-50%);
+      }
+      @include breakpoint-up(large) {
+        left: 70px;
+      }
+    }
+    &__title {
+      font-weight: $font-lg;
+      font-size: 25px;
+      color: $very-dark-violet;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    &__text {
+      font-weight: $font-lg;
+      font-size: 16px;
+      color: $gray;
+      text-align: center;
+      line-height: 1.5;
+    }
+    &:nth-child(1) {
+      grid-row: 1 / span 5;
+    }
+    &:nth-child(2) {
+      grid-row: 7 / span 5;
+    }
+    &:nth-child(3) {
+      grid-row: 13 / span 5;
+    }
+    @include breakpoint-up(large) {
+      &:nth-child(1) {
+        grid-row: 1 / span 5;
+      }
+      &:nth-child(2) {
+        grid-row: 2 / span 5;
+      }
+      &:nth-child(3) {
+        grid-row: 3 / span 5;
+      }
+    }
+  }
+}
