@@ -1,0 +1,55 @@
+.shortener {
+  margin: 15px $page-padding;
+  padding: 35px;
+  background-color: $dark-violet;
+  min-height: 50px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-image: url("./images/bg-shorten-mobile.svg");
+    // transform: translateX(50px);
+  }
+  @include breakpoint-down(medium) {
+    margin: 15px;
+    padding: 25px;
+  }
+
+  &__input,
+  &__button {
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    z-index: 1;
+  }
+
+  &__input {
+    padding: 15px;
+    margin-right: 15px;
+    flex: 1;
+    &::placeholder {
+      font-size: $font-size;
+      font-family: $main-font;
+      font-weight: $font-lg;
+      color: $gray;
+    }
+    @include breakpoint-down(medium) {
+      margin: 0 0 15px 0;
+    }
+  }
+  &__button {
+    padding: 15px 35px;
+  }
+  @include breakpoint-down(medium) {
+    flex-direction: column;
+  }
+}

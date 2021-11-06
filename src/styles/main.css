@@ -186,7 +186,7 @@ button {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
-    min-width: 300px;
+    min-width: 200px;
   }
 }
 
@@ -251,12 +251,110 @@ button {
 @media (max-width: 639px) {
   .section__button {
     margin: 0 auto;
+    margin-bottom: 35px;
   }
 }
 
 @media (max-width: 639px) {
   .section {
     padding: 0;
+  }
+}
+
+.shortener {
+  margin: 15px 100px;
+  padding: 35px;
+  background-color: #3b3054;
+  min-height: 50px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  overflow: hidden;
+}
+
+.shortener::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-image: url("./images/bg-shorten-mobile.svg");
+}
+
+@media (max-width: 1023px) {
+  .shortener {
+    margin: 15px;
+    padding: 25px;
+  }
+}
+
+.shortener__input, .shortener__button {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  z-index: 1;
+}
+
+.shortener__input {
+  padding: 15px;
+  margin-right: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.shortener__input::-webkit-input-placeholder {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #bfbfbf;
+}
+
+.shortener__input:-ms-input-placeholder {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #bfbfbf;
+}
+
+.shortener__input::-ms-input-placeholder {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #bfbfbf;
+}
+
+.shortener__input::placeholder {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #bfbfbf;
+}
+
+@media (max-width: 1023px) {
+  .shortener__input {
+    margin: 0 0 15px 0;
+  }
+}
+
+.shortener__button {
+  padding: 15px 35px;
+}
+
+@media (max-width: 1023px) {
+  .shortener {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=main.css.map */

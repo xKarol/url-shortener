@@ -23,7 +23,7 @@
     order: 1;
     @include breakpoint-down(small) {
       order: 0;
-      min-width: 300px;
+      min-width: 200px;
     }
   }
 
@@ -63,8 +63,10 @@
     font-size: 15px;
     padding: 15px 20px;
     width: max-content;
+
     @include breakpoint-down(small) {
       margin: 0 auto;
+      margin-bottom: 35px;
     }
   }
   @include breakpoint-down(small) {

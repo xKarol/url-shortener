@@ -3,11 +3,13 @@ import ReactDOM from "react-dom";
 import "./styles/main.css";
 import Header from "./components/Header.js";
 import Section from "./components/Section.js";
+import Shortener from "./components/UrlShortener";
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
     <Section />
+    <Shortener />
   </React.StrictMode>,
   document.getElementById("root")
   //Shorten a link here... Shorten It!
