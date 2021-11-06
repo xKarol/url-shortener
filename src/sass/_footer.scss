@@ -5,14 +5,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &__logo{
+  position: relative;
+  padding-bottom: 20px;
+  &__logo {
+    @include breakpoint-down(medium) {
       margin: 40px 0;
+    }
+    @include breakpoint-up(large) {
+      margin-right: 200px;
+    }
   }
   &__links {
-    text-align: center;
     display: flex;
     flex-direction: column;
     padding: 15px;
+    @include breakpoint-down(medium) {
+      text-align: center;
+    }
+    @include breakpoint-up(large) {
+      padding-top: 0;
+      margin-right: 40px;
+    }
   }
   &__link {
     color: $gray;
@@ -22,8 +35,8 @@
   }
   &__link-title {
     color: $white;
-    font-size: $font-size + 2;
-    margin-bottom: 25px;
+    font-size: 18px;
+    margin-bottom: 30px;
   }
   &__socials {
     padding: 15px 0;
@@ -33,8 +46,16 @@
         margin-right: 15px;
       }
     }
+    @include breakpoint-up(large) {
+      padding: 0;
+    }
   }
   > span {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
     color: $white;
     text-align: center;
     font-weight: $font-sm;
@@ -44,5 +65,10 @@
       color: $white;
       font-weight: $font-lg;
     }
+  }
+  @include breakpoint-up(large) {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 50px 0;
   }
 }

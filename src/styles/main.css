@@ -526,14 +526,23 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  padding-bottom: 20px;
 }
 
-.footer__logo {
-  margin: 40px 0;
+@media (max-width: 1023px) {
+  .footer__logo {
+    margin: 40px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__logo {
+    margin-right: 200px;
+  }
 }
 
 .footer__links {
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -542,6 +551,19 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 15px;
+}
+
+@media (max-width: 1023px) {
+  .footer__links {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__links {
+    padding-top: 0;
+    margin-right: 40px;
+  }
 }
 
 .footer__link {
@@ -554,8 +576,8 @@ button {
 
 .footer__link-title {
   color: white;
-  font-size: 20px;
-  margin-bottom: 25px;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
 .footer__socials {
@@ -570,7 +592,19 @@ button {
   margin-right: 15px;
 }
 
+@media (min-width: 1024px) {
+  .footer__socials {
+    padding: 0;
+  }
+}
+
 .footer > span {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   color: white;
   text-align: center;
   font-weight: 500;
@@ -581,5 +615,18 @@ button {
 .footer > span > a {
   color: white;
   font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 50px 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
