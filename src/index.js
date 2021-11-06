@@ -5,6 +5,7 @@ import Header from "./components/Header.js";
 import Section from "./components/Section.js";
 import Shortener from "./components/UrlShortener.js";
 import Info from "./components/InfoSection.js";
+import GetStarted from "./components/GetStartedContainer.js";
 import Footer from "./components/Footer.js";
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
     <Section />
     <Shortener />
     <Info />
+    <GetStarted />
     <Footer />
   </React.StrictMode>,
   document.getElementById("root")
