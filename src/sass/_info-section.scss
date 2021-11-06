@@ -1,11 +1,13 @@
 .info-section {
   background-color: hsl(228, 20%, 95%);
   margin-top: 50px;
+  padding-bottom: 50px;
   &__details {
     display: flex;
     flex-direction: column;
     padding: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: -60px;
   }
   &__title {
     font-weight: $font-lg;

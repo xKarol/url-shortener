@@ -1,9 +1,11 @@
 import React from "react";
+import Shortener from "./UrlShortener.js";
 
 const Info = () => {
   return (
     <>
       <section className="info-section">
+        <Shortener />
         <div className="info-section__details">
           <h1 className="info-section__title">Advanced Statistics</h1>
           <p className="info-section__text">
