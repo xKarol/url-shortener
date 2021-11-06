@@ -28,6 +28,12 @@ button {
   background: #2acfcf;
   border-radius: 5px;
   cursor: pointer;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.5;
 }
 
 .header {
@@ -98,10 +104,16 @@ button {
   color: #9e9aa7;
   font-weight: 700;
   font-size: 16px;
+  -webkit-transition: 0.2s color ease-in-out;
+  transition: 0.2s color ease-in-out;
 }
 
 .header__links a:not(:last-child) {
   margin-right: 20px;
+}
+
+.header__links a:hover {
+  color: #35323e;
 }
 
 .header__logo {
@@ -288,6 +300,8 @@ button {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   overflow: hidden;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .shortener::before {
@@ -347,6 +361,10 @@ button {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #bfbfbf;
+}
+
+.shortener__input:focus {
+  border: 3px solid #2acfcf;
 }
 
 @media (max-width: 1023px) {
@@ -638,10 +656,16 @@ button {
 
 .footer__link {
   color: #bfbfbf;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 .footer__link:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.footer__link:hover {
+  color: #2acfcf;
 }
 
 .footer__link-title {

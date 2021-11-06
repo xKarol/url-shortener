@@ -45,8 +45,12 @@
     color: $grayish-violet;
     font-weight: $font-lg;
     font-size: 16px;
+    transition: 0.2s color ease-in-out;
     &:not(:last-child) {
       margin-right: 20px;
+    }
+    &:hover {
+      color: $very-dark-blue;
     }
   }
   &__logo {

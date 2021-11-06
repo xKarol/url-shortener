@@ -8,6 +8,7 @@
   position: relative;
   transform: translateY(-50%);
   overflow: hidden;
+  box-sizing: content-box;
   &::before {
     content: "";
     position: absolute;
@@ -36,6 +37,9 @@
       font-family: $main-font;
       font-weight: $font-lg;
       color: $gray;
+    }
+    &:focus {
+      border: 3px solid $cyan;
     }
     @include breakpoint-down(medium) {
       margin: 0 0 15px 0;

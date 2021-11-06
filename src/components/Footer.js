@@ -81,13 +81,29 @@ export default Footer;
 
 const Facebook = styled(FaFacebookSquare)`
   color: #fff;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: hsl(180, 66%, 49%);
+  }
 `;
 const Instagram = styled(FaInstagram)`
   color: #fff;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: hsl(180, 66%, 49%);
+  }
 `;
 const Twitter = styled(FaTwitter)`
   color: #fff;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: hsl(180, 66%, 49%);
+  }
 `;
 const Pinterest = styled(FaPinterest)`
   color: #fff;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: hsl(180, 66%, 49%);
+  }
 `;

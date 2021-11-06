@@ -29,8 +29,12 @@
   }
   &__link {
     color: $gray;
+    transition: color 0.2s ease-in-out;
     &:not(:last-child) {
       margin-bottom: 20px;
+    }
+    &:hover{
+      color: $cyan;
     }
   }
   &__link-title {
