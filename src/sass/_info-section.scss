@@ -5,6 +5,8 @@
   &__details {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 15px;
     margin-bottom: 30px;
     margin-top: -60px;
@@ -15,6 +17,7 @@
     color: $very-dark-violet;
     text-align: center;
     margin: 15px 0;
+    margin-top: 25px;
   }
   &__text {
     font-weight: $font-lg;
@@ -22,19 +25,19 @@
     color: $gray;
     text-align: center;
     line-height: 1.5;
+    max-width: 500px;
   }
   &__grid {
     display: grid;
     grid-template-rows: repeat(17, 60px);
-
     position: relative;
     gap: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 100px;
     &::before {
       content: "";
       position: absolute;
       left: 50%;
-      top: 50%;
+      top: 40%;
       transform: translate(-50%, -50%);
       width: 8px;
       height: 80%;
@@ -47,6 +50,9 @@
         height: 8px;
         width: 80%;
       }
+    }
+    @include breakpoint-down(medium) {
+      padding-bottom: 0;
     }
   }
   &__box {
