@@ -351,6 +351,10 @@ button:hover {
           flex: 1;
 }
 
+.shortener__input.--error {
+  border: 3px solid rgba(244, 98, 98, 0.75);
+}
+
 .shortener__input::-webkit-input-placeholder {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
@@ -412,6 +416,10 @@ button:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.shortener__button.--copied {
+  background-color: #3b3054;
 }
 
 .shortener__error {
