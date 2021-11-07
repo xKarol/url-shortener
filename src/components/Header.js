@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "./Logo.js";
 
 const Header = () => {
+  const [hamburgerOpened, setOpenHamburger] = useState(false);
+  useEffect(() => {
+    if (hamburgerOpened) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  });
   return (
     <>
       <header className="header">
@@ -16,13 +24,35 @@ const Header = () => {
         <div className="header__right-side">
           <button className="header__button sign-in">Login</button>
           <button className="header__button">Sign Up</button>
-          <div className="header__hamburger">
+          <div
+            className={
+              hamburgerOpened
+                ? "header__hamburger --active"
+                : "header__hamburger"
+            }
+            onClick={() => setOpenHamburger(!hamburgerOpened)}
+          >
             <span />
             <span />
             <span />
           </div>
         </div>
       </header>
+      <nav
+        className={
+          hamburgerOpened ? "hamburger__menu --active" : "hamburger__menu"
+        }
+      >
+        <a href="/" className="hamburger__menu__link">
+          Features
+        </a>
+        <a href="/" className="hamburger__menu__link">
+          Pircing
+        </a>
+        <a href="/" className="hamburger__menu__link">
+          Resources
+        </a>
+      </nav>
     </>
   );
 };

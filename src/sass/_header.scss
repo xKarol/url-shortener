@@ -9,12 +9,13 @@
     width: 20px;
     display: none;
     cursor: pointer;
+    z-index: 2;
     > span {
       width: 100%;
       height: 3px;
       background-color: $grayish-violet;
-      transform-origin: 0% 45%;
-      transition: 0.5s ease-in-out;
+      transform-origin: -5% 45%;
+      transition: 0.3s ease-in-out;
 
       &:not(:last-child) {
         margin-bottom: 5px;
@@ -80,5 +81,46 @@
       align-items: center;
       flex-direction: column;
     }
+  }
+}
+
+.hamburger__menu {
+  display: none;
+  background-color: $white;
+  position: absolute;
+  padding: 25px;
+  padding-top: 75px;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  min-width: 40vw;
+  z-index: 1;
+  &.--active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slide 0.3s ease-in-out forwards;
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }
+  &__link {
+    color: $very-dark-violet;
+    font-size: 25px;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  @include breakpoint-down(small) {
+    width: 100vw;
+  }
+}
+
+@keyframes slide {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
   }
 }
