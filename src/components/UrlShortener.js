@@ -96,7 +96,12 @@ const Link = ({ main_link, short_link, copy }) => {
       <li className="shortener__link-box">
         <h1 className="shortener__link">{main_link}</h1>
         <div className="shortener__right-side">
-          <a className="shortener__link__shorten" href={short_link}>
+          <a
+            className="shortener__link__shorten"
+            href={short_link}
+            target="_blank"
+            rel="noreferrer"
+          >
             {short_link}
           </a>
           <button

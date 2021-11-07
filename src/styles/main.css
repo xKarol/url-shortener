@@ -423,6 +423,7 @@ button:hover {
 }
 
 .shortener__error {
+  width: 100%;
   color: #f46262;
   font-size: 14px;
   position: absolute;
@@ -433,6 +434,19 @@ button:hover {
 @media (max-width: 1023px) {
   .shortener__error {
     bottom: 7px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 530px) {
+  .shortener__error {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shortener__error {
+    font-size: 8px;
   }
 }
 
