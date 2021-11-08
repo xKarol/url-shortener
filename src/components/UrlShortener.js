@@ -24,9 +24,11 @@ const Shortener = () => {
     try {
       const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
       data = await res.json();
-      const shortLink = data.result.full_short_link;
-      setLinks([...links, { main_link: url, short_link: shortLink }]);
-    } catch {
+      if (data.ok) {
+        const shortLink = data.result.full_short_link;
+        setLinks([{ main_link: url, short_link: shortLink }, ...links]);
+      }
+    } catch (e) {
       const code = data.error_code;
       if (code < 0 || code > 10) {
         setError("Wystąpił niespodziewany problem...");
@@ -60,10 +62,10 @@ const Shortener = () => {
           value={url}
           onChange={(e) => setUrl(e.target.value)}
         />
-        {error && <span className="shortener__error">{error}</span>}
         <button className="shortener__button" onClick={checkForm}>
           {loading ? <Loading /> : "Shorten It!"}
         </button>
+        {error && <span className="shortener__error">{error}</span>}
       </div>
       {links && (
         <ul className="shortener__links">

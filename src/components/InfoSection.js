@@ -16,7 +16,7 @@ const Info = () => {
         <div className="info-section__grid">
           <div className="info-section__box">
             <div className="info-section__box__icon">
-              <img src="/images/icon-brand-recognition.svg" alt="icon" />
+              <img src="images/icon-brand-recognition.svg" alt="icon" />
             </div>
             <h1 className="info-section__box__title">Brand Recognition</h1>
             <p className="info-section__box__text">
@@ -27,7 +27,7 @@ const Info = () => {
           </div>
           <div className="info-section__box">
             <div className="info-section__box__icon">
-              <img src="/images/icon-detailed-records.svg" alt="icon" />
+              <img src="images/icon-detailed-records.svg" alt="icon" />
             </div>
             <h1 className="info-section__box__title">Detailed Records</h1>
             <p className="info-section__box__text">
@@ -38,7 +38,7 @@ const Info = () => {
           </div>
           <div className="info-section__box">
             <div className="info-section__box__icon">
-              <img src="/images/icon-fully-customizable.svg" alt="icon" />
+              <img src="images/icon-fully-customizable.svg" alt="icon" />
             </div>
             <h1 className="info-section__box__title">Fully Customizable</h1>
             <p className="info-section__box__text">

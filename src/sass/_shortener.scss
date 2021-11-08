@@ -7,6 +7,7 @@
   border-radius: 5px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   position: relative;
   overflow: hidden;
   &::before {
@@ -17,9 +18,6 @@
     bottom: 0;
     left: 0;
     background: url("./images/bg-shorten-desktop.svg") no-repeat;
-  }
-  @include breakpoint-down(medium) {
-    padding: 25px;
   }
   &__input,
   &__button {
@@ -65,28 +63,26 @@
     }
   }
   &__error {
-    width: 100%;
+    height: 0;
+    flex-basis: 100%;
     color: $red;
     font-size: 14px;
-    position: absolute;
-    bottom: 12px;
     font-style: italic;
-    @include breakpoint-down(medium) {
-      bottom: 7px;
-      font-size: 12px;
-    }
-    @media (max-width: 530px) {
+    transform: translateY(10px);
+    z-index: 1;
+    @include breakpoint-down(small) {
       font-size: 10px;
-    }
-    @media (max-width: 480px) {
-      font-size: 8px;
     }
   }
   @include breakpoint-down(medium) {
     flex-direction: column;
+    flex-wrap: nowrap;
     &__button {
       flex-basis: 0;
     }
+  }
+  @include breakpoint-down(medium) {
+    padding: 25px;
   }
   &__right-side {
     display: flex;
