@@ -1,15 +1,15 @@
 import Header from "./components/Header.js";
-import Section from "./components/Section.js";
-import Info from "./components/InfoSection.js";
-import GetStarted from "./components/GetStartedContainer.js";
+import Hero from "./components/Hero.js";
+import AdvancedStatistics from "./components/AdvancedStatistics.js";
+import GetStarted from "./components/GetStarted.js";
 import Footer from "./components/Footer.js";
 
 export default function App() {
   return (
     <>
       <Header />
-      <Section />
-      <Info />
+      <Hero />
+      <AdvancedStatistics />
       <GetStarted />
       <Footer />
     </>

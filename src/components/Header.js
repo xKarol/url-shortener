@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Logo from "./Logo.js";
 
-const Header = () => {
+export default function Header() {
   const [hamburgerOpened, setOpenHamburger] = useState(false);
+
   useEffect(() => {
     if (hamburgerOpened) {
       document.body.classList.add("no-scroll");
@@ -10,6 +11,7 @@ const Header = () => {
       document.body.classList.remove("no-scroll");
     }
   });
+
   return (
     <>
       <header className="header">
@@ -55,6 +57,4 @@ const Header = () => {
       </nav>
     </>
   );
-};
-
-export default Header;
+}

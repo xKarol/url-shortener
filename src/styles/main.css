@@ -236,7 +236,7 @@ button:hover {
   }
 }
 
-.section {
+.hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,7 +251,7 @@ button:hover {
           flex-direction: column;
 }
 
-.section__picture {
+.hero__picture {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -262,7 +262,7 @@ button:hover {
   overflow: hidden;
 }
 
-.section__picture::before {
+.hero__picture::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -273,7 +273,7 @@ button:hover {
 }
 
 @media (min-width: 640px) {
-  .section__picture {
+  .hero__picture {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -281,12 +281,12 @@ button:hover {
 }
 
 @media (max-width: 1023px) {
-  .section__picture {
+  .hero__picture {
     padding-left: 25px;
   }
 }
 
-.section__details {
+.hero__details {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -301,12 +301,12 @@ button:hover {
 }
 
 @media (max-width: 639px) {
-  .section__details {
+  .hero__details {
     padding: 10px;
   }
 }
 
-.section__title {
+.hero__title {
   font-weight: 700;
   font-size: 50px;
   color: #232127;
@@ -315,12 +315,12 @@ button:hover {
 }
 
 @media (max-width: 639px) {
-  .section__title {
+  .hero__title {
     text-align: center;
   }
 }
 
-.section__text {
+.hero__text {
   font-weight: 700;
   font-size: 20px;
   color: #bfbfbf;
@@ -329,12 +329,12 @@ button:hover {
 }
 
 @media (max-width: 639px) {
-  .section__text {
+  .hero__text {
     text-align: center;
   }
 }
 
-.section__button {
+.hero__button {
   border-radius: 25px;
   font-size: 15px;
   padding: 15px 20px;
@@ -344,14 +344,14 @@ button:hover {
 }
 
 @media (max-width: 639px) {
-  .section__button {
+  .hero__button {
     margin: 0 auto;
     margin-bottom: 55px;
   }
 }
 
 @media (min-width: 640px) {
-  .section {
+  .hero {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -363,13 +363,13 @@ button:hover {
 }
 
 @media (max-width: 1023px) {
-  .section {
+  .hero {
     padding: 0 0 55px 25px;
   }
 }
 
 @media (max-width: 639px) {
-  .section {
+  .hero {
     padding: 0 0 55px 0;
   }
 }
@@ -636,13 +636,13 @@ button:hover {
   }
 }
 
-.info-section {
+.advanced-statistics {
   background-color: #f0f1f5;
   margin-top: 50px;
   padding-bottom: 50px;
 }
 
-.info-section__details {
+.advanced-statistics__details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -661,7 +661,7 @@ button:hover {
   margin-top: -60px;
 }
 
-.info-section__title {
+.advanced-statistics__title {
   font-weight: 700;
   font-size: 30px;
   color: #232127;
@@ -670,7 +670,7 @@ button:hover {
   margin-top: 25px;
 }
 
-.info-section__text {
+.advanced-statistics__text {
   font-weight: 700;
   font-size: 18px;
   color: #bfbfbf;
@@ -680,7 +680,7 @@ button:hover {
   margin-bottom: 15px;
 }
 
-.info-section__grid {
+.advanced-statistics__grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (60px)[17];
@@ -690,7 +690,7 @@ button:hover {
   padding-bottom: 100px;
 }
 
-.info-section__grid::before {
+.advanced-statistics__grid::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -703,32 +703,32 @@ button:hover {
 }
 
 @media (min-width: 1024px) {
-  .info-section__grid {
+  .advanced-statistics__grid {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: (40px)[7];
         grid-template-rows: repeat(7, 40px);
   }
-  .info-section__grid::before {
+  .advanced-statistics__grid::before {
     height: 8px;
     width: 80%;
   }
 }
 
 @media (max-width: 1023px) {
-  .info-section__grid {
+  .advanced-statistics__grid {
     padding-bottom: 0;
   }
 }
 
-.info-section__box {
+.advanced-statistics__box {
   background-color: white;
   border-radius: 5px;
   padding: 60px 30px 0 30px;
   position: relative;
 }
 
-.info-section__box__icon {
+.advanced-statistics__box__icon {
   position: absolute;
   width: 80px;
   height: 80px;
@@ -740,7 +740,7 @@ button:hover {
   border-radius: 50%;
 }
 
-.info-section__box__icon > img {
+.advanced-statistics__box__icon > img {
   position: absolute;
   left: 50%;
   top: 18px;
@@ -749,12 +749,12 @@ button:hover {
 }
 
 @media (min-width: 1024px) {
-  .info-section__box__icon {
+  .advanced-statistics__box__icon {
     left: 70px;
   }
 }
 
-.info-section__box__title {
+.advanced-statistics__box__title {
   font-weight: 700;
   font-size: 25px;
   color: #232127;
@@ -762,7 +762,7 @@ button:hover {
   margin-bottom: 15px;
 }
 
-.info-section__box__text {
+.advanced-statistics__box__text {
   font-weight: 700;
   font-size: 16px;
   color: #bfbfbf;
@@ -770,36 +770,36 @@ button:hover {
   line-height: 1.5;
 }
 
-.info-section__box:nth-child(1) {
+.advanced-statistics__box:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
   grid-row: 1 / span 4;
 }
 
-.info-section__box:nth-child(2) {
+.advanced-statistics__box:nth-child(2) {
   -ms-grid-row: 7;
   -ms-grid-row-span: 4;
   grid-row: 7 / span 4;
 }
 
-.info-section__box:nth-child(3) {
+.advanced-statistics__box:nth-child(3) {
   -ms-grid-row: 13;
   -ms-grid-row-span: 4;
   grid-row: 13 / span 4;
 }
 
 @media (min-width: 1024px) {
-  .info-section__box:nth-child(1) {
+  .advanced-statistics__box:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-row-span: 5;
     grid-row: 1 / span 5;
   }
-  .info-section__box:nth-child(2) {
+  .advanced-statistics__box:nth-child(2) {
     -ms-grid-row: 2;
     -ms-grid-row-span: 5;
     grid-row: 2 / span 5;
   }
-  .info-section__box:nth-child(3) {
+  .advanced-statistics__box:nth-child(3) {
     -ms-grid-row: 3;
     -ms-grid-row-span: 5;
     grid-row: 3 / span 5;
@@ -807,13 +807,13 @@ button:hover {
 }
 
 @media (max-width: 1023px) {
-  .info-section {
+  .advanced-statistics {
     padding: 0 25px;
   }
 }
 
 @media (min-width: 1024px) {
-  .info-section {
+  .advanced-statistics {
     padding: 0 100px;
   }
 }
@@ -988,5 +988,37 @@ button:hover {
             align-items: flex-start;
     padding: 50px 0;
   }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.loading {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 0.25rem solid rgba(255, 255, 255, 0.2);
+  border-top-color: white;
+  -webkit-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear;
 }
 /*# sourceMappingURL=main.css.map */
