@@ -1,8 +1,8 @@
-import Header from "./components/Header.js";
-import Hero from "./components/Hero.js";
-import AdvancedStatistics from "./components/AdvancedStatistics.js";
-import GetStarted from "./components/GetStarted.js";
-import Footer from "./components/footer/index.js";
+import Header from "./components/header";
+import Hero from "./components/Hero";
+import AdvancedStatistics from "./components/advanced-statistics";
+import GetStarted from "./components/GetStarted";
+import Footer from "./components/footer/index";
 
 export default function App() {
   return (
