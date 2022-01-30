@@ -946,6 +946,13 @@ button:hover {
 
 .footer__socials > a {
   font-size: 26px;
+  color: #fff;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer__socials > a:hover {
+  color: #2acfcf;
 }
 
 .footer__socials > a:not(:last-child) {

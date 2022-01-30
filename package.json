@@ -1,7 +1,7 @@
 {
   "name": "url-shortening",
   "version": "0.1.0",
-  "homepage":".",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
@@ -13,7 +13,6 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-scripts": "4.0.3",
-    "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

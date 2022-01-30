@@ -33,7 +33,7 @@
     &:not(:last-child) {
       margin-bottom: 20px;
     }
-    &:hover{
+    &:hover {
       color: $cyan;
     }
   }
@@ -46,6 +46,11 @@
     padding: 15px 0;
     > a {
       font-size: 26px;
+      color: #fff;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        color: hsl(180, 66%, 49%);
+      }
       &:not(:last-child) {
         margin-right: 15px;
       }
