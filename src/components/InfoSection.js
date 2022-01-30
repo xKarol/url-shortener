@@ -1,5 +1,5 @@
 import React from "react";
-import Shortener from "./UrlShortener.js";
+import Shortener from "./shortener";
 
 const Info = () => {
   return (
