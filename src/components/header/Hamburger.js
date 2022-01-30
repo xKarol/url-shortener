@@ -1,6 +1,9 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import HeaderContext from "../../context/HeaderContext";
 
-export default function Hamburger({ setOpenHamburger, hamburgerOpened }) {
+export default function Hamburger() {
+  const { setOpenHamburger, hamburgerOpened } = useContext(HeaderContext);
+
   useEffect(() => {
     if (hamburgerOpened) {
       document.body.classList.add("no-scroll");

@@ -26,7 +26,7 @@ export default function Shortener() {
       if (!code || code < 0 || code > 10) return setError("Unknown error");
 
       const errors = [
-        "Wystąpił niespodziewany problem...", // code_0
+        "Unknown error", // code_0
         "No URL specified", // code_1
         "Invalid URL submitted", // code_2
         "Rate limit reached. Wait a second and try again", // code_3
