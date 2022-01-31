@@ -103,6 +103,9 @@
     &.sign-in {
       color: $grayish-violet;
       background: none;
+      @include breakpoint-down(medium) {
+        padding: 0 10px;
+      }
     }
     @include breakpoint-down(small) {
       display: none;
