@@ -6,6 +6,7 @@ export default function Hamburger() {
 
   useEffect(() => {
     if (hamburgerOpened) {
+      window.scrollTo(0, 0);
       document.body.classList.add("no-scroll");
     } else {
       document.body.classList.remove("no-scroll");

@@ -742,6 +742,10 @@ button:hover {
   border-radius: 5px;
   padding: 60px 30px 0 30px;
   position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 1023px) {
