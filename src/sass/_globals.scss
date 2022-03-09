@@ -39,3 +39,23 @@ button {
     opacity: 0.5;
   }
 }
+
+.spacing {
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+  @include breakpoint-up(medium) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @include breakpoint-up(large) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @include breakpoint-up(xlarge) {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}

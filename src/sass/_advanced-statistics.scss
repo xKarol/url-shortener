@@ -2,6 +2,7 @@
   background-color: hsl(228, 20%, 95%);
   margin-top: 50px;
   padding-bottom: 50px;
+  width: 100%;
   &__details {
     display: flex;
     flex-direction: column;
@@ -120,11 +121,5 @@
         grid-row: 3 / span 5;
       }
     }
-  }
-  @include breakpoint-down(medium) {
-    padding: 0 25px;
-  }
-  @include breakpoint-up(large) {
-    padding: 0 $page-padding;
   }
 }

@@ -1,9 +1,21 @@
 .hero {
   display: flex;
-  padding-left: $page-padding;
   align-items: center;
   padding-bottom: 55px;
   flex-direction: column;
+  max-width: $max-w;
+  @include breakpoint-up(medium) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+  }
+  @include breakpoint-up(large) {
+    padding-left: 100px;
+  }
+  @include breakpoint-up(xlarge) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   &__picture {
     flex: 1;
     width: 100%;
@@ -68,15 +80,5 @@
       margin: 0 auto;
       margin-bottom: 55px;
     }
-  }
-  @include breakpoint-up(medium) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  @include breakpoint-down(medium) {
-    padding: 0 0 55px 25px;
-  }
-  @include breakpoint-down(small) {
-    padding: 0 0 55px 0;
   }
 }
