@@ -124,6 +124,18 @@ button:hover {
   margin-bottom: 5px;
 }
 
+@media (min-width: 640px) {
+  .header__hamburger {
+    display: none;
+  }
+}
+
+.header__hamburger.--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header__hamburger.--active :nth-child(1) {
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
@@ -138,12 +150,6 @@ button:hover {
 .header__hamburger.--active :nth-child(3) {
   -webkit-transform: rotateZ(-45deg);
           transform: rotateZ(-45deg);
-}
-
-@media (min-width: 640px) {
-  .header__hamburger {
-    display: none;
-  }
 }
 
 .header__left-side, .header__right-side {
@@ -165,37 +171,37 @@ button:hover {
   display: flex;
 }
 
-@media (max-width: 639px) {
-  .header__nav.--hamburger {
-    position: absolute;
-    background-color: white;
-    top: 0;
-    right: -100%;
-    bottom: 0;
-    z-index: 10;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 25px;
-    padding-top: 75px;
-    min-width: 40vw;
-    width: 100vw;
-    -webkit-animation: slide 0.3s ease-in-out forwards;
-            animation: slide 0.3s ease-in-out forwards;
-  }
-  .header__nav.--hamburger a {
-    display: block;
-  }
-  .header__nav.--hamburger a:not(:last-child) {
-    margin-bottom: 25px;
-  }
+.header__nav.active {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+  padding-top: 75px;
+  min-width: 40vw;
+  width: 100vw;
+  -webkit-animation: slide 0.3s ease-in-out forwards;
+          animation: slide 0.3s ease-in-out forwards;
+}
+
+.header__nav.active a {
+  display: block;
+}
+
+.header__nav.active a:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 .header__nav a {
@@ -688,6 +694,7 @@ button:hover {
   background-color: #f0f1f5;
   margin-top: 50px;
   padding-bottom: 50px;
+  width: 100%;
 }
 
 .advanced-statistics__details {

@@ -5,7 +5,7 @@ import NavLink from "./NavLink";
 export default function Nav() {
   const { hamburgerOpened } = useContext(HeaderContext);
   return (
-    <nav className={`header__nav ${hamburgerOpened ? "--hamburger" : null}`}>
+    <nav className={`header__nav ${hamburgerOpened ? "active" : ""}`}>
       <NavLink name={"Features"} />
       <NavLink name={"Pircing"} />
       <NavLink name={"Resources"} />
