@@ -982,6 +982,9 @@ button:hover {
   color: #bfbfbf;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .footer__link:not(:last-child) {

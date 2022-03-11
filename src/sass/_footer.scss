@@ -30,6 +30,7 @@
   &__link {
     color: $gray;
     transition: color 0.2s ease-in-out;
+    max-width: max-content;
     &:not(:last-child) {
       margin-bottom: 20px;
     }
