@@ -473,6 +473,7 @@ button:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  border: 3px solid transparent;
 }
 
 .shortener__input.--error {

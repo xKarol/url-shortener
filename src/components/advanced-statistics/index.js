@@ -1,11 +1,10 @@
-import Shortener from "../shortener";
 import Item from "./Item";
 
-export default function AdvancedStatistics() {
+export default function AdvancedStatistics({ children }) {
   return (
     <section className="advanced-statistics">
       <div className="spacing">
-        <Shortener />
+        {children}
         <div className="advanced-statistics__details">
           <h1 className="advanced-statistics__title">Advanced Statistics</h1>
           <p className="advanced-statistics__text">
